@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289149323076",
+    "project_id": "cinabdelivery",
+    "storage_bucket": "cinabdelivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289149323076:android:dd6a26a606dd3a402af911",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8sKwEIgMHsdDl-mQlDqjN6czooezu5ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
