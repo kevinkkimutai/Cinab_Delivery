@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "moses_g89f_user",
+    "password": "z2a8LV2Ae54ysunkFTZGgYQ3EBfqzb9L",
+    "database": "cinab",
+    "host": "dpg-cnrfljq1hbls73dvgh6g-a.oregon-postgres.render.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    },
+    "pool": {
+      "max": 10,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "cinabcok_cinab_delivery",
+    "password": "cinab@2024",
+    "database": "cinabcok_delivery",
+    "host": "cinab.co.ke",
+    "port": 5432,
+    "dialect": "postgres", 
+    "dialectOptions": {
+      "ssl": false
+    },
+    "pool": {
+      "max": 10,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+}
