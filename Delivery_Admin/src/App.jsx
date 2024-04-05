@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate,  } from "react-router-dom";
 import {
   AllDrivers,
   AllOrders,
+  AllRestaurants,
   FoodDashboard,
   Login,
   NotFound,
@@ -11,6 +12,8 @@ import {
   RejectedOrders,
   Settings,
   SignUp,
+  ViewOrder,
+  ViewRestaurant,
 
 } from "./pages";
 import { logOut } from "./reducers/AuthReducers";
@@ -50,9 +53,16 @@ export default function App() {
             >
             <Route path="dashboard" element={<ProductDashboard />} />
             <Route path="all_drivers" element={<AllDrivers />} />
+            {/* orders routes */}
             <Route path="orders" element={<AllOrders />} />
             <Route path="pending_orders" element={<PendingOrders />} />
             <Route path="rejected_orders" element={<RejectedOrders />} />
+            <Route path="view_order" element={<ViewOrder />} />
+            {/* restaurant routes */}
+            <Route path="restaurants" element={<AllRestaurants />} />
+            <Route path="view_restaurant" element={<ViewRestaurant />} />
+
+            {/* other routes */}
             <Route path="settings" element={<Settings />} />
           </Route>
 

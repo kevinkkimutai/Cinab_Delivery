@@ -48,20 +48,20 @@ function AllOrders() {
                 </svg>
             </button>
             {/* <!-- Dropdown menu --> */}
-            <div id="dropdownAction" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <div id="dropdownAction" className="z-10 hidden bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 ">
                 <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownActionButton">
-                    <li>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Reward</a>
+                    <li  className="p-1">
+                        <a href="product/view_order" className="rounded-lg block px-4 py-2 hover:bg-gray-100 hover:text-black">Reward</a>
                     </li>
-                    <li>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Promote</a>
+                    <li  className="p-1">
+                        <a href="product/view_order" className="rounded-lg block px-4 py-2 hover:bg-gray-100 hover:text-black">Promote</a>
                     </li>
-                    <li>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Activate account</a>
+                    <li className="p-1">
+                        <a href="product/view_order" className="rounded-lg block px-4 py-2 hover:bg-gray-200 hover:text-black">Activate account</a>
                     </li>
                 </ul>
-                <div className="py-1">
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Delete User</a>
+                <div className="py-1 p-1 rounded-lg text-center">
+                    <a href="product/view_order" className="block rounded-lg px-4 py-2 text-sm text-white hover:bg-red-400 bg-red-700 ">Delete Order</a>
                 </div>
             </div>
         </div>
@@ -79,13 +79,16 @@ function AllOrders() {
         <thead className="text-xs text-gray-700 uppercase bg-gray-10">
             <tr>
                 <th scope="col" className="p-4">
-                   #
+                  #
                 </th>
                 <th scope="col" className="px-6 py-3">
                     Name
                 </th>
                 <th scope="col" className="px-6 py-3">
-                    Position
+                    Hotel
+                </th>
+                <th scope="col" className="px-6 py-3">
+                    Category
                 </th>
                 <th scope="col" className="px-6 py-3">
                     Status
@@ -107,20 +110,23 @@ function AllOrders() {
                     <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Neil Sims</div>
-                        <div className="font-normal text-gray-500">neil.sims@flowbite.com</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
                     </div>  
                 </th>
                 <td className="px-3 py-2">
-                    React Developer
+                    Pizza Inn
+                </td>
+                <td className="px-3 py-2">
+                    Pizza
                 </td>
                 <td className="px-3 py-2">
                     <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online
+                         pending
                     </div>
                 </td>
                 <td className="px-3 py-2">
                     {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                 </td>
             </tr>
             <tr className="bg-white border-b hover:bg-gray-200">
@@ -134,20 +140,23 @@ function AllOrders() {
                     <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Bonnie Green</div>
-                        <div className="font-normal text-gray-500">bonnie@flowbite.com</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
                     </div>
                 </th>
                 <td className="px-3 py-2">
-                    Designer
+                    KFC
+                </td>
+                <td className="px-3 py-2">
+                    Chicken
                 </td>
                 <td className="px-3 py-2">
                     <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online
+                         on_delivery
                     </div>
                 </td>
                 <td className="px-3 py-2">
                     {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                 </td>
             </tr>
             <tr className="bg-white border-b hover:bg-gray-200">
@@ -161,20 +170,23 @@ function AllOrders() {
                     <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Jese Leos</div>
-                        <div className="font-normal text-gray-500">jese@flowbite.com</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
                     </div>
                 </th>
                 <td className="px-3 py-2">
-                    Vue JS Developer
+                    Galitos
+                </td>
+                <td className="px-3 py-2">
+                    Beef Stew
                 </td>
                 <td className="px-3 py-2">
                     <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online
+                         delivered
                     </div>
                 </td>
                 <td className="px-3 py-2">
                     {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                 </td>
             </tr>
             <tr className="bg-white border-b hover:bg-gray-200">
@@ -188,115 +200,128 @@ function AllOrders() {
                     <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Thomas Lean</div>
-                        <div className="font-normal text-gray-500">thomes@flowbite.com</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
                     </div>
                 </th>
                 <td className="px-3 py-2">
                     UI/UX Engineer
                 </td>
                 <td className="px-3 py-2">
+                    UI/UX Engineer
+                </td>
+                <td className="px-3 py-2">
                     <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online
+                         Rejected
                     </div>
                 </td>
                 <td className="px-3 py-2">
                     {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                 </td>
             </tr>
-            <tr className="bg-white hover:bg-gray-200">
+            <tr className="bg-white border-b hover:bg-gray-200">
                 <td className="w-4 p-4">
                     <div className="flex items-center">
-                        <input id="checkbox-table-search-3" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-3" className="sr-only">checkbox</label>
+                        <input id="checkbox-table-search-2" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label htmlFor="checkbox-table-search-2" className="sr-only">checkbox</label>
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese image" />
                     <div className="ps-3">
-                        <div className="text-base font-semibold">Leslie Livingston</div>
-                        <div className="font-normal text-gray-500">leslie@flowbite.com</div>
+                        <div className="text-base font-semibold">Bonnie Green</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
                     </div>
                 </th>
                 <td className="px-3 py-2">
-                    SEO Specialist
+                    Designer
+                </td>
+                <td className="px-3 py-2">
+                    Designer
                 </td>
                 <td className="px-3 py-2">
                     <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline
+                         on_delivery
                     </div>
                 </td>
                 <td className="px-3 py-2">
                     {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
+                </td>
+            </tr>
+            <tr className="bg-white border-b hover:bg-gray-200">
+                <td className="w-4 p-4">
+                    <div className="flex items-center">
+                        <input id="checkbox-table-search-2" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label htmlFor="checkbox-table-search-2" className="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" className="flex items-center px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
+                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Jese image" />
+                    <div className="ps-3">
+                        <div className="text-base font-semibold">Jese Leos</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
+                    </div>
+                </th>
+                <td className="px-3 py-2">
+                    Vue JS Developer
+                </td>
+                <td className="px-3 py-2">
+                    Vue JS Developer
+                </td>
+                <td className="px-3 py-2">
+                    <div className="flex items-center">
+                         delivered
+                    </div>
+                </td>
+                <td className="px-3 py-2">
+                    {/* <!-- Modal toggle --> */}
+                    <a href="product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
+                </td>
+            </tr>
+            <tr className="bg-white border-b hover:bg-gray-200">
+                <td className="w-4 p-4">
+                    <div className="flex items-center">
+                        <input id="checkbox-table-search-2" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label htmlFor="checkbox-table-search-2" className="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" className="flex items-center px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
+                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese image" />
+                    <div className="ps-3">
+                        <div className="text-base font-semibold">Thomas Lean</div>
+                        <div className="font-normal text-gray-500">+254746645142</div>
+                    </div>
+                </th>
+                <td className="px-3 py-2">
+                    UI/UX Engineer
+                </td>
+                <td className="px-3 py-2">
+                    UI/UX Engineer
+                </td>
+                <td className="px-3 py-2">
+                    <div className="flex items-center">
+                         Rejected
+                    </div>
+                </td>
+                <td className="px-3 py-2">
+                    {/* <!-- Modal toggle --> */}
+                    <a href="/product/view_order" type="button"  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                 </td>
             </tr>
 
-            <tr className="bg-white hover:bg-gray-200">
-                <td className="w-4 p-4">
-                    <div className="flex items-center">
-                        <input id="checkbox-table-search-3" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-3" className="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" className="flex items-center px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese image" />
-                    <div className="ps-3">
-                        <div className="text-base font-semibold">Leslie Livingston</div>
-                        <div className="font-normal text-gray-500">leslie@flowbite.com</div>
-                    </div>
-                </th>
-                <td className="px-3 py-2">
-                    SEO Specialist
-                </td>
-                <td className="px-3 py-2">
-                    <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline
-                    </div>
-                </td>
-                <td className="px-3 py-2">
-                    {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-            <tr className="bg-white hover:bg-gray-200">
-                <td className="w-4 p-4">
-                    <div className="flex items-center">
-                        <input id="checkbox-table-search-3" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-3" className="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" className="flex items-center px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese image" />
-                    <div className="ps-3">
-                        <div className="text-base font-semibold">Leslie Livingston</div>
-                        <div className="font-normal text-gray-500">leslie@flowbite.com</div>
-                    </div>
-                </th>
-                <td className="px-3 py-2">
-                    SEO Specialist
-                </td>
-                <td className="px-3 py-2">
-                    <div className="flex items-center">
-                        <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline
-                    </div>
-                </td>
-                <td className="px-3 py-2">
-                    {/* <!-- Modal toggle --> */}
-                    <a href="#" type="button" onClick={openModal} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
         </tbody>
+
     </table>
-    {/* <!-- Edit user modal --> */}
+    {/* <!-- View modal --> */}
     <div id="editUserModal" tabIndex="-1"  className="flex bg-gray-900 opacity-95 fixed top-0 pt-20 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-screen">
-        <div className="relative w-full max-w-4xl max-h-full">
+        <div className="relative w-full w-full max-h-full">
             {/* <!-- Modal content --> */}
             <form className="relative bg-gray-400 rounded-lg shadow ">
                 {/* <!-- Modal header --> */}
                 <div className="flex items-start justify-between p-2 border-b rounded-t bg-gray-300">
                     <h3 className="text-xl font-semibold text-gray-900 font-serif">
-                        Edit Diver
+                        View Order
                     </h3>
                    <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" onClick={closeModal}>
                     <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">

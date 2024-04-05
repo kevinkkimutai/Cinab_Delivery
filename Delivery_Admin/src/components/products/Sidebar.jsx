@@ -9,6 +9,7 @@ const Sidebar = ({ handleLogout }) => {
   const [lastName, setlastName] = useState();
   const [role, setRole] = useState();
   const [orderDropdownOpen, setOrderDropdownOpen] = useState(false);
+  const [restaurantDropdownOpen, setRestaurantDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (currentUser) {
@@ -54,6 +55,10 @@ const Sidebar = ({ handleLogout }) => {
     setOrderDropdownOpen(!orderDropdownOpen);
     
   };
+  const toggleRestaurantDropdown = () => {
+    setRestaurantDropdownOpen(!restaurantDropdownOpen);
+    
+  };
   return (
    <div className="sidebar">
   <div className="logo-details">
@@ -81,6 +86,39 @@ const Sidebar = ({ handleLogout }) => {
       </a>
       <span className="tooltip">Drivers</span>
     </li>
+    <li id="restaurant" className={restaurantDropdownOpen ? " rounded-t-lg border border-white" : ""}>
+<a onClick={toggleRestaurantDropdown} >
+  <i className='bx bxs-cart-alt'></i>
+  <span className="links_name">Restaurant  </span>
+</a>
+<span className="tooltip">Restaurant</span>
+</li>
+{restaurantDropdownOpen && (
+      <ul className="bg-gray-950 rounded-b-lg border border-t-0 border-white -mt-2 drops">
+        <li className="p-">
+          <a href="/product/restaurants">
+          <i className='bx bx-cart-alt' style={{color: "blue"}}></i>
+            <span className="links_name">All Restaurants</span>
+          </a>
+          <span className="tooltip">All Restaurants</span>
+        </li>
+        <li className="p-">
+          <a href="/product/pending_restaurants">
+          <i className='bx bx-cart-add' style={{color: "green"}} ></i>
+            <span className="links_name">Pending Restaurants</span>
+          </a>
+          <span className="tooltip">Pending Restaurants</span>
+        </li>
+        <li className="">
+          <a href="/product/rejected_restaurants">
+          <i className='bx bx-cart-download' style={{color: "red"}} ></i>
+            <span className="links_name">Rejected Restaurants</span>
+          </a>
+          <span className="tooltip">Rejected Restaurants</span>
+        </li>
+      </ul>
+)}
+
     <li>
       <a href="/product/messages">
         <i className='bx bx-chat'></i>

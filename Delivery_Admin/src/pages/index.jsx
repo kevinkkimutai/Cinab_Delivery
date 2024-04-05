@@ -10,8 +10,18 @@ export { default as AllDrivers} from "../pages/drivers/AllDrivers";
 export { default as AllOrders} from "../pages/orders/AllOrders";
 export { default as PendingOrders} from "../pages/orders/PendingOrders";
 export { default as RejectedOrders} from "../pages/orders/RejectedOrders";
+export { default as ViewOrder} from "../pages/orders/ViewOrder";
 
+// restaurant exports
+export { default as AllRestaurants} from "../pages/restaurants/AllRestaurants";
+export { default as ViewRestaurant} from "../pages/restaurants/ViewRestaurant";
 
 // food section
 export { default as FoodDashboard} from "../pages/food/FoodDashboard";
+
+
+
+
+
+
 
