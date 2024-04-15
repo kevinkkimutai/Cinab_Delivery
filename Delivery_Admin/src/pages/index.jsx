@@ -15,9 +15,13 @@ export { default as ViewOrder} from "../pages/orders/ViewOrder";
 // restaurant exports
 export { default as AllRestaurants} from "../pages/restaurants/AllRestaurants";
 export { default as ViewRestaurant} from "../pages/restaurants/ViewRestaurant";
+export { default as PendingRestaurants} from "../pages/restaurants/PendingRestaurants";
+export { default as RejectedRestaurants} from "../pages/restaurants/RejectedRestaurants";
 
 // food section
 export { default as FoodDashboard} from "../pages/food/FoodDashboard";
+
+
 
 
 

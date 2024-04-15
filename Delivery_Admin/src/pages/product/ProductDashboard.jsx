@@ -1,4 +1,4 @@
-import { Active, DashCards } from "../../components";
+import { Active, ActiveRes, DashCards } from "../../components";
 
 const ProductDashboard = () => {
   return (
@@ -8,7 +8,9 @@ const ProductDashboard = () => {
       <div className="active mt-4 rounded">
       <Active />
       </div>
-
+      <div className="active mt-4 rounded">
+      <ActiveRes />
+      </div>
     </div>
 
   );

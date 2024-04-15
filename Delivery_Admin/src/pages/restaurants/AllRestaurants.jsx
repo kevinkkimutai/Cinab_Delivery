@@ -95,7 +95,7 @@ function AllRestaurants() {
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="/src/assets/pizza.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Pizza Inn</div>
                        
@@ -125,9 +125,9 @@ function AllRestaurants() {
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="/src/assets/inn.jpeg" alt="Jese image" />
                     <div className="ps-3">
-                        <div className="text-base font-semibold">Pizza Inn</div>
+                        <div className="text-base font-semibold">Chicken Inn</div>
                        
                     </div>  
                 </th>
@@ -155,7 +155,7 @@ function AllRestaurants() {
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="/src/assets/pizza.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Pizza Inn</div>
                        
@@ -185,9 +185,9 @@ function AllRestaurants() {
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="/src/assets/inn.jpeg" alt="Jese image" />
                     <div className="ps-3">
-                        <div className="text-base font-semibold">Pizza Inn</div>
+                        <div className="text-base font-semibold">Cicken Inn</div>
                        
                     </div>  
                 </th>
@@ -215,7 +215,7 @@ function AllRestaurants() {
                     </div>
                 </td>
                 <th scope="row" className="flex items-center px-3 py-2 text-gray-900 whitespace-nowrap">
-                    <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
+                    <img className="w-10 h-10 rounded-full" src="/src/assets/pizza.jpg" alt="Jese image" />
                     <div className="ps-3">
                         <div className="text-base font-semibold">Pizza Inn</div>
                        
