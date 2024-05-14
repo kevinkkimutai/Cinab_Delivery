@@ -10,7 +10,7 @@ import AuthReducers from "../reducers/AuthReducers";
 const authPersistConfig = {
   key: "auth",
   storage,
-  whitelist: ["token", "roles", "user", "refreshToken"],
+  whitelist: ["token", "roles", "user", "cart","refreshToken"],
   stateReconciler: autoMergeLevel2,
 };
 

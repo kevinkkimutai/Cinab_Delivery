@@ -11,7 +11,8 @@ import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { selectIsCart } from "../reducers/AuthReducers";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,7 +20,11 @@ const Navbar = () => {
   console.log(cart);
   const navigate = useNavigate();
   const handleCLick = () => {
-    navigate("/cart");
+    if (cart.length > 0) {
+      navigate("/cart");
+    }else{
+      toast.error("Please Add Food In Your Cart")
+    }
   };
 
   return (
@@ -30,9 +35,9 @@ const Navbar = () => {
             <div onClick={() => setNav(!nav)} className="cursor-pointer">
               <AiOutlineMenu size={30} />
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
+            <Link to="/" className="text-2xl sm:text-3xl lg:text-4xl px-2">
               Cinab <span className="font-bold">Eats</span>
-            </h1>
+            </Link>
             <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
               <p className="bg-black text-white rounded-full p-2">Delivery</p>
               <p className="p-2">Pickup</p>
@@ -163,6 +168,9 @@ const Navbar = () => {
                 </li>
                 <li className="text-xl py-4 flex">
                   <MdHelp size={25} className="mr-4" /> Help
+                </li>
+                <li className="text-xl py-4 flex">
+                  <MdHelp size={25} className="mr-4" /> Cart <sup className="text-red-500 rounded-full h-12 w-12">2</sup>
                 </li>
                 <li className="text-xl py-4 flex">
                   <AiFillTag size={25} className="mr-4" /> Promotions
